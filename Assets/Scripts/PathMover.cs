@@ -17,11 +17,15 @@ public class PathMover : MonoBehaviour
     public bool play = true;
 
     public static PathMover Singleton;
+
+    public float puthLVL;
+
     void Start()
     {
         Singleton = this;
         play = true;
-        
+
+        puthLVL = 0f;
     }
 
 
@@ -32,7 +36,9 @@ public class PathMover : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                SetCartPosition(m_Position + speed * Time.deltaTime * 5f);
+                puthLVL = m_Position + speed * Time.deltaTime * 5f;
+
+                SetCartPosition(puthLVL);
 
                 TextScaler.Singleton.gameObject.SetActive(false);
             }
