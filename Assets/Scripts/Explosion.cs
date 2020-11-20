@@ -56,7 +56,7 @@ public class Explosion : MonoBehaviour
 
         PathMover.Singleton.play = false;
 
-        StartCoroutine(RestartMenu());
+        StartCoroutine(RestartMenu()); // включение окна проигрыша
 
         for (int x = 0; x < cubesInRow; x++)
         {

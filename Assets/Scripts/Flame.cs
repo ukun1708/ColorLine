@@ -21,5 +21,10 @@ public class Flame : MonoBehaviour
         {
             gameObject.GetComponent<ParticleSystem>().Stop();
         }
+
+        if (PathMover.Singleton.gameObject.GetComponent<MeshRenderer>().enabled == false)
+        {
+            gameObject.GetComponent<ParticleSystem>().Stop();
+        }
     }
 }
