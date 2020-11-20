@@ -14,9 +14,6 @@ public class SliderLVL : MonoBehaviour
 
     void Update()
     {
-
-        var pros = PathMover.Singleton.puthLVL;
-
-        slider.value = PathMover.Singleton.puthLVL * slider.value;
+        slider.value = PathMover.Singleton.puthLVL / PathMover.Singleton.m_Path.PathLength;
     }
 }
