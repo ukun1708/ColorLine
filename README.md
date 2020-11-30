@@ -1,4 +1,4 @@
 ColorLine
 =========
 
-[Ссылка на задание](Task)
+<img src="Recordings/movie_001.gif" />
